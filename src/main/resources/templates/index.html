@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<table class="table">
+
+    <thead>
+    <tr>
+        <th>Weekday</th>
+        <th>Fruit</th>
+        <th>Hours</th>
+    </tr>
+
+    </thead>
+    <tbody>
+
+
+    <tr th:each="item :${fruitstand}">
+        <td th:text ="${item.weekday}"></td>
+        <td th:text ="${item.fruit}"></td>
+        <td th:text ="${item.hours}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
